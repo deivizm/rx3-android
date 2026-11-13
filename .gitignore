@@ -41,6 +41,8 @@ local.properties
 *.keystore
 captures/
 .cxx/
+# APK descargado del CI + capturas de prueba en local
+dist/
 
 # ===========================================================================
 #  macOS / editores
