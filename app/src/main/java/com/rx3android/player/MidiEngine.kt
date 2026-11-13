@@ -119,6 +119,11 @@ class MidiEngine(
         }
     }
 
+    private fun log(line: String) {
+        Log.i(TAG, line)
+        handler.post { onLog(line) }
+    }
+
     private fun describe(info: MidiDeviceInfo): String {
         val props = info.properties
         val name = props.getString(MidiDeviceInfo.PROPERTY_NAME)
