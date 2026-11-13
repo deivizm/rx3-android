@@ -1,0 +1,51 @@
+# ===========================================================================
+#  FIRMWARE DE PIONEER — NUNCA SE SUBE (propietario, límite del proyecto)
+# ===========================================================================
+RX3/
+**/*.UPD
+**/*.upd
+aes256.key
+**/aes256.key
+*.tar.bz2
+*.tar.bz2.*
+pioneerdj_*
+# nombres con los que se descargan los zips de Pioneer GPL
+A9BEE4F7-*.zip
+57CB205B-*.zip
+# árboles de firmware extraído (los aporta David en local, no van al repo)
+XDJRX3-rootfs/
+XDJRX3/
+XDJRX3-gui/
+**/rbp
+**/rbp.orig
+
+# ===========================================================================
+#  Referencias clonadas (son repos externos, no parte de nuestro código)
+# ===========================================================================
+references/
+
+# ===========================================================================
+#  Mapeos propietarios de apps de terceros (uso local como referencia)
+# ===========================================================================
+*.tsi
+*.djayMidiMapping
+
+# ===========================================================================
+#  Android / Gradle
+# ===========================================================================
+.gradle/
+build/
+local.properties
+*.apk
+*.aab
+*.keystore
+captures/
+.cxx/
+
+# ===========================================================================
+#  macOS / editores
+# ===========================================================================
+.DS_Store
+.idea/
+*.iml
+.vscode/
