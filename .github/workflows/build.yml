@@ -21,6 +21,8 @@ jobs:
 
       - name: Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: ''   # evita que intente instalar el obsoleto 'tools'
 
       - name: Instalar componentes del SDK (platform, build-tools, NDK, CMake)
         run: |
